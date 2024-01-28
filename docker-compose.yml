@@ -3,7 +3,7 @@ services:
   tecsan_app:
   container_name: tecsan_app
     build: .
-    command: 'npm run start'
+    command: 'PORT=3004 npm run start'
     working_dir: /home/node/app
     environment:
       - NODE_ENV=production
