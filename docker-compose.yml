@@ -1,6 +1,6 @@
 version: '3'
 services:
-  tecsan_api:
+  tecsan_app:
   container_name: tecsan_app
     build: .
     command: 'npm run start'
