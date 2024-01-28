@@ -1,0 +1,13 @@
+version: '3'
+services:
+  tecsan_api:
+  container_name: tecsan_app
+    build: .
+    command: 'npm run start'
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    expose:
+      - '3004'
+    ports:
+      - '3004:3004'
